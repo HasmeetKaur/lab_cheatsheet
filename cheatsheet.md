@@ -4,27 +4,28 @@
 This is a cheet sheet containing some popular commands.
 
 ## Terminology
-
 **Terminal** is the terminal
 **Shell** is the screen
 **Oh-My-Zsh** makes the twirly lines in the terminal
 
-open . opens the folder to find things
-**Terminal Commands**
-
-- **pwd** Print work directory
-- **list** Lists all the contents of the directory
-- **ls -l** Gives size, name of owner, last owned
-important to put the space
+# Terminal Commands ##
+- **open .** opens the folder to find things
+- **pwd** Print work directory - to find which folder your currently in
+- **list** Lists all the visible contents of the directory
+- **ls -l** The flag l gives a list of files and folders along with permissions, owner and date last modified
+Note: it's important to put the space
+- **ls -al** Gives all the files and folders (.name) in the directory, including hidden configuration/system ones
 - **clear** Clears from screen but you can scroll up
 - **man** Short for manual, can tell you what you do with command
 - **man ls**
 - **q** Press q to come out
-
 **Warning:** Dont delete anything with a dot- they are hidden files from tools like finder
 
-- **ls -al** All hidden files and all the extra info too
+## File Navigation ## 
 - **cd** Change directory - e.g. cd Documents, can use tab to find the next folder
+- **cd** or **cd ~** to go back to the home directory
+- **cd -** to go back to the previous directory
+
 - **mkdir** Makes a directory
 **Note** Use distinct names
 **Note** Use . at the beginning of the name making it a hidden folder
@@ -32,15 +33,17 @@ important to put the space
 **Note:** Try not to use spaces. Html: use dashes. JS: underscore.
 **Note:** Deleting from the terminal - means its gone
 - **rm another_file** deletes not moves to trash, is like cut and paste
-- **mv** for move
+- **mv** for move - This one needs two pieces of information: the thing we're moving and the place we're moving it to
+eg. mv my_picture.png .. The .. shortcut means "the directory above this one" and we can use it from anywhere in the system. A single dot . means "this directory".
 - **mv picture.png ..** moves it up a level
 - **Mv picture.png profile_photo.png** renames files. Can rename and move a file at the same time
 - **cp** Copy. cp profile_photo.png my_directory. Copy and remove give errors when you do it on a directory
-
-- **rm -r** recursive - do sit over and over 
-- **cp-r** 
+- **cp -r** can rename and copy a file
+- **rm** remove a file
+- **rm -r** used to remove a folder - recursive - does it over and over 
 No need to mv and can do ls-r
 Can do multiple directores
+Note: Sometimes we will be asked for confirmation before deleting something, usually if something else might depend on it being there. We can bypass this confirmation by adding the -f flag, but only do this if you are absolutely certain that you want to be deleting the folder!
 
 # Git (most popular version control software)
 
@@ -64,13 +67,3 @@ After doing this, you may fix the identity used for this commit with:
 - **git log**
 - **git revert** 
 - **rm rf-git** to remove a git repository
-
-
-
-## Commit your changes regularly as you add to your file.
-
-## Create a repository on GitHub and link your local repository to it.
-
-## Push your files to GitHub
-
-## Investigate `.gitignore` files and what they are used for. Try adding one to your repository.
